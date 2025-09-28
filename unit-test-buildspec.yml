@@ -9,8 +9,8 @@ phases:
       # Chrome installation for Angular's unit tests
     #  - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | tee /etc/apt/keyrings/chrome.gpg
     #  - echo "deb [signed-by=/etc/apt/keyrings/chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
-      - apt-get -y update
-      - apt-get -y install google-chrome-stable
+      - sudo yum -y update
+      - sudo yum -y install google-chrome-stable
   pre_build:
     commands:
       - npm install
